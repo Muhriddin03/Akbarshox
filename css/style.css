@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/* ================= Layout */
+.content {
+  width: 1208px;
+  margin: auto;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  padding-top: 76px;
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  width: 100%;
+  padding: 11.5px 0 11px;
+  z-index: 14;
+}
+
+header nav .nav_left {
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav_right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+header nav .nav_left .logo {
+  margin-right: 40.25px;
+}
+
+header nav .nav_left .btn-catalog {
+  background: #70c05b;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav_left .btn-catalog span {
+  display: inline-block;
+  width: 92px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+header nav .nav_left .search {
+  width: 375px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+header nav .nav_left .search input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid #70c05b;
+  border-radius: 4px;
+  padding-left: 16px;
+}
+
+:focus {
+  outline: none;
+}
+
+header nav .nav_left .search input::placeholder {
+  /* font-family: "Rubik"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  display: flex;
+  align-items: center;
+
+  /* Grayscale / Hard */
+
+  color: #8f8f8f;
+}
+
+header nav .nav_left .search .btn-search {
+  position: absolute;
+  background: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  gap: 24px;
+  margin-left: 40px;
+}
+
+.icons li {
+  position: relative;
+}
+.icons li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav .nav_right .user a {
+  display: flex;
+  align-items: center;
+}
+header nav .nav_right .user a img {
+  margin-right: 10px;
+}
+header nav .nav_right .user a span {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #232323;
+  margin-right: 23.5px;
+}
+
+.icons li a.heart {
+  margin-right: 40px;
+}
+
+.icons li a .svg-1 {
+  margin-bottom: 10.25px;
+}
+.icons li a .svg-2 {
+  margin-bottom: 8.73px;
+}
+.icons li a .svg-3 {
+  margin-bottom: 8px;
+}
+.icons li a span {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Main/onSurface */
+
+  color: #414141;
+}
+
+.icons li a small {
+  position: absolute;
+  width: 11.28px;
+  height: 11px;
+  padding: 2px 4px;
+  background: #ff6633;
+  border-radius: 4px;
+  color: #fff;
+  top: -4.5px;
+  left: 24.36px;
+  font-size: 8px;
+}
+
+/* section-menu style strted  */
+
+.section-menu {
+  background: #fbf8ec;
+  padding-top: 27px;
+  padding-bottom: 80px;
+}
+.section-menu .menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 27px;
+}
+.section-menu .menu a.active {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #414141;
+}
+.section-menu .menu i {
+  display: flex;
+}
+.section-menu .menu a.no-active {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  /* Grayscale / Hard */
+
+  color: #8f8f8f;
+}
+
+.section-menu .title h1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 150%;
+  /* identical to box height, or 96px */
+
+  /* Main/onSurface */
+  margin-bottom: 60px;
+  color: #414141;
+}
+
+/* section-menu products-card style  satrted  */
+
+
+.section-menu .products .card-box {
+  gap: 40px;
+  display: flex;
+  margin-bottom: 40px;
+}
+.section-menu .products .card-box-b {
+  gap: 40px;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+
+
+.section-menu .products .card-box-b  .cardw,
+.section-menu .products .card-box .card {
+  width: 272px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: .7s;
+  cursor: pointer;
+}
+
+.section-menu .products .card-box-b .card-w:hover .curtain,
+.section-menu .products .card-box-b .card:hover .curtain,
+.section-menu .products .card-box .card-w:hover .curtain,
+.section-menu .products .card-box .card:hover .curtain{
+    background: linear-gradient(180deg, rgba(255, 102, 51, 0) 0%, #FF6633 100%);
+}
+
+.section-menu .products .card-box-b .card-w .curtain,
+.section-menu .products .card-box .card-w {
+  width: 584px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.section-menu .products .card-box-b .card-w .curtain,
+.section-menu .products .card-box-b .card .curtain,
+.section-menu .products .card-box .card .curtain,
+.section-menu .products .card-box .card-w .curtain{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70c05b 82.81%);
+  
+}
+
+.section-menu .products .card-box-b .card-w .card-img,
+.section-menu .products .card-box-b .card .card-img,
+.section-menu .products .card-box .card .card-img,
+.section-menu .products .card-box .card-w .card-img {
+  width: 100%;
+  height: 100%;
+}
+.section-menu .products .card-box .card .card-img img,
+.section-menu .products .card-box .card-w .card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-menu .products .card-box-b .card-w h2,
+.section-menu .products .card-box-b .card h2,
+.section-menu .products .card-box .card h2,
+.section-menu .products .card-box .card-w h2 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  /* identical to box height, or 27px */
+
+  /* Main/onSecondary */
+
+  color: #ffffff;
+}
+
+/* footer style started  */
+
+footer {
+ background: url(/images/bg.png)  #F9F4E2; 
+}
+
+/* footer nav{
+  
+} */
+footer nav {
+  padding: 24px 0 29.54px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2px;
+}
+footer nav .nav-left {
+  display: flex;
+  align-items: center;
+}
+footer nav .nav-left a {
+  margin-right: 40px;
+}
+footer nav .nav-left ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+footer nav .nav-left ul li a {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #414141;
+  margin: 0;
+}
+footer nav .nav_right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+footer nav .nav_right .social {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-right: 40px;
+}
+footer nav .nav_right .td {
+  display: flex;
+  flex-direction: column;
+}
+footer nav .nav_right .td .tel {
+  display: flex;
+}
+footer nav .nav_right .td .tel img {
+  margin-right: 8px;
+}
+footer nav .nav_right .td .tel span {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #414141;
+}
